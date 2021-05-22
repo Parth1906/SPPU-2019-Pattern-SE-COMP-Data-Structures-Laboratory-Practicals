@@ -1,5 +1,6 @@
 /*
-Experiment 13 : Represent a given grapg using adjacency matrix/list to perform DFS and using adjacency list to perform BFS. Use the map of the area around the college as a graph. Identify the prominent land marks as nodes and perform DFS and BFS on that.
+Experiment 13 : Represent a given grapg using adjacency matrix/list to perform DFS and using adjacency list to perform BFS. 
+                Use the map of the area around the college as a graph. Identify the prominent land marks as nodes and perform DFS and BFS on that.
 Adjacency Matrix : using adj matrix -BFS(Que)
 */
 

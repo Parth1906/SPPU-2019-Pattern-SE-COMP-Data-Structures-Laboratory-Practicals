@@ -1,5 +1,5 @@
 /*
-Experiment 1 : C++ Program To read details of a book consists of chapters, chapters consist of sections and sections      
+Experiment 5 : C++ Program To read details of a book consists of chapters, chapters consist of sections and sections      
                consist of subsections. Construct a tree and print the nodes. Find the time and space requirements of your method.
 */
 
@@ -51,8 +51,6 @@ void GT::create_tree()
             cout << "Enter Name of Section " << j + 1 << " : ";
             cin.get();
             getline(cin, root->child[i]->child[j]->label);
-            //cout<<"Enter no. of subsections in "<<r1->child[i]->child[j]->label;
-            //cin>>r1->child[i]->ch_count;
         }
     }
 }

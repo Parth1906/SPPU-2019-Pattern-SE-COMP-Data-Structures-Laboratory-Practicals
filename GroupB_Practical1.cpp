@@ -34,7 +34,6 @@ void GT::create_tree()
     cout << "Enter name of book : ";
     cin.get();
     getline(cin, root->label);
-    //cin>>root->label;
     cout << "Enter number of chapters in book : ";
     cin >> tchapters;
     root->ch_count = tchapters;
@@ -42,10 +41,8 @@ void GT::create_tree()
     {
         root->child[i] = new node;
         cout << "Enter the name of Chapter " << i + 1 << " : ";
-        //cout << "Enter Chapter name\n";
         cin.get();
         getline(cin, root->child[i]->label);
-        //cin>>root->child[i]->label;
         cout << "Enter number of sections in Chapter : " << root->child[i]->label << " : ";
         cin >> root->child[i]->ch_count;
         for (j = 0; j < root->child[i]->ch_count; j++)
@@ -54,7 +51,6 @@ void GT::create_tree()
             cout << "Enter Name of Section " << j + 1 << " : ";
             cin.get();
             getline(cin, root->child[i]->child[j]->label);
-            //cin>>root->child[i]->child[j]->label;
             //cout<<"Enter no. of subsections in "<<r1->child[i]->child[j]->label;
             //cin>>r1->child[i]->ch_count;
         }
@@ -77,9 +73,7 @@ void GT::display(node *r1)
             cout << "\nSections : ";
             for (j = 0; j < r1->child[i]->ch_count; j++)
             {
-                //cin>>r1->child[i]->child[j]->label;
-                cout << "\n"
-                     << r1->child[i]->child[j]->label;
+                cout << "\n"<< r1->child[i]->child[j]->label;
             }
         }
     }
